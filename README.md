@@ -40,7 +40,7 @@ brew install exiftool
 
 # Debian/Ubuntu:
 sudo apt install libimage-exiftool-perl
-
+```
 ---
 
 ## 🙌 Apóyame
