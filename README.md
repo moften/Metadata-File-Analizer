@@ -43,6 +43,51 @@ sudo apt install libimage-exiftool-perl
 ```
 ---
 
+## 🧪 Cómo se usa
+
+### ▶️ Ejecución básica
+
+Puedes ejecutar la herramienta con o sin argumentos:
+
+#### ✅ Modo 1: Especificar ruta directamente
+
+```bash
+python3 main.py /ruta/a/carpeta/o/archivo
+```
+
+#### ✅ Modo 2: Sin argumentos (el sistema te pregunta la ruta)
+
+```bash
+python3 main.py
+```
+
+### 📋 Menú interactivo
+
+Al ejecutar el script, verás un menú como este:
+
+```
+¿Qué deseas hacer?
+1. Revisar metadatos
+2. Eliminar metadatos
+3. Salir
+```
+
+Selecciona la opción deseada y deja que la magia ocurra.
+
+---
+
+## 📁 Formatos soportados
+
+| Tipo         | Extensiones            | Limpieza              |
+|--------------|------------------------|------------------------|
+| PDF          | `.pdf`                 | Limpieza con PyPDF2    |
+| Documentos   | `.docx`                | Limpieza con python-docx |
+| Imágenes     | `.jpg`, `.jpeg`, `.png`| Limpieza con `exiftool` |
+| Texto plano  | `.txt`, `.sql`         | Limpieza básica        |
+| Comprimidos  | `.zip`, `.rar`         | Descomprime y limpia recursivamente |
+
+---
+
 ## 🙌 Apóyame
 
 Si esta herramienta te ha sido útil o quieres apoyar futuros desarrollos, puedes invitarme un café ☕ o hacer una donación. ¡Cualquier apoyo cuenta!
