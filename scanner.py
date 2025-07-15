@@ -1,8 +1,6 @@
-# scanner.py (versión CLI sin interfaz gráfica)
-
 import os
 import sys
-from utils import get_supported_files, print_file_info
+from utils import get_supported_files, print_file_info, show_metadata_details
 
 def select_path():
     if len(sys.argv) > 1:
@@ -27,3 +25,4 @@ def scan_metadata(path):
     print(f"\n🧾 Archivos encontrados: {len(files)}")
     for file in files:
         print_file_info(file)
+        show_metadata_details(file)
